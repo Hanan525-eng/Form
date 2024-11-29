@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form action="" method="post" target="_blank">
+        <h1>Registration Form for the Front-end Developer Course</h1>
+        <hr>
+        <div class="name">
+            <label for="name">User Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required autofocus>
+        </div>
+        <hr>
+        <div>
+            <label for="mail">User Email</label>
+            <input type="email" name="mail" id="mail" placeholder="Enter your email" required>
+        </div>
+        <hr>
+        <div>
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" pattern="[0-9]{10}"
+                required>
+        </div>
+        <hr>
+        <div>
+            <label for="education">Academic Qualification</label>
+            <input type="text" name="education" id="education" placeholder="Enter your academic qualification">
+        </div>
+        <hr>
+        <div>
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date" required>
+        </div>
+        <hr>
+        <div class="languages">
+            <h2>Which languages do you know?</h2>
+            <label for="languages">Languages</label>
+            <select name="languages[]" id="languages">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="C++">C++</option>
+                <option value="C#">C#</option>
+                <option value="Java">Java</option>
+                <option value="Ruby">Ruby</option>
+                <option value="PHP">PHP</option>
+                <option value="Go">Go</option>
+                <option value="Rust">Rust</option>
+                <option value="Kotlin">Kotlin</option>
+                <option value="Swift">Swift</option>
+                <option value="Scala">Scala</option>
+            </select>
+            </select>
+
+        </div>
+        <hr>
+        <div class="languages">
+            <h2>Which framework do you know?</h2>
+            <label for="languages">framework</label>
+            <select name="languages[]" id="languages">
+                <option value="html">vue</option>
+                <option value="css">react</option>
+                <option value="js">angular</option>
+                <option value="jQuery">jQuery</option>
+                <option value="bootstrap">bootstrap</option>
+                <option value="Emberjs">Emberjs</option>
+                <option value="Backbonejs">Backbonejs</option>
+                <option value="svelte">svelte</option>
+                <option value="Preact">Preact</option>
+            </select>
+        </div>
+        <hr>
+
+        <div>
+            <label for="comment">Add a Comment</label><br>
+            <textarea name="comment" id="comment" cols="30" rows="10"
+                placeholder="Enter any additional comments"></textarea>
+        </div>
+        <hr>
+        <input class="btn btn-save" type="submit" value="Save">
+        <input class="btn btn-reset" type="reset" value="Reset">
+        <h6>&copy; Copyright 2024</h6>
+    </form>
+
+</body>
+
+</html>
